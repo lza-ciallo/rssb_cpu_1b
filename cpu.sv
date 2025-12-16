@@ -1,12 +1,12 @@
 module cpu #(
     BW  =   1   // data width
 )(
-    input   logic               clk1            ,
-    input   logic               clk2            ,
-    input   logic               rst             ,
-    input   logic               ena             ,
-    input   logic   [BW-1:0]    data    [1:0]   ,
-    output  logic               flag            ,
+    input   logic               clk1        ,
+    input   logic               clk2        ,
+    input   logic               rst         ,
+    input   logic               ena         ,
+    input   logic   [BW-1:0]    data[1:0]   ,
+    output  logic               flag        ,
     output  logic   [BW-1:0]    result
 );
 

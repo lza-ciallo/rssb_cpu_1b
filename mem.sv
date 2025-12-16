@@ -7,12 +7,12 @@ module mem #(
     LEN =   4   ,   // fifo length
     PTR =   2       // fifo ptr width
 )(
-    input   logic               clk             ,
-    input   logic               rst             ,
-    input   logic               flag            ,
-    input   logic   [BW-1:0]    result          ,
-    output  logic               ena             ,
-    output  logic   [BW-1:0]    data    [1:0]
+    input   logic               clk         ,
+    input   logic               rst         ,
+    input   logic               flag        ,
+    input   logic   [BW-1:0]    result      ,
+    output  logic               ena         ,
+    output  logic   [BW-1:0]    data[1:0]
 );
 
 typedef struct packed {
